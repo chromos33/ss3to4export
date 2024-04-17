@@ -1,0 +1,7 @@
+---
+Name: exportroutes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'SiteExport//$Action/$ID/$Name': 'SiteExport'

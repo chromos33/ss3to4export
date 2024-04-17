@@ -1,0 +1,1169 @@
+---
+Name: exportconfig
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+Export:
+  Configs:
+    SiteTree:
+      IsBaseClass: true
+      LocaleField: Locale
+      Fields:
+        URLSegment:
+          Source: "URLSegment"
+          Target: "URLSegment"
+        Title:
+          Source: "Title"
+          Target: "Title"
+        MenuTitle:
+          Source: "MenuTitle"
+          Target: "MenuTitle"
+        Content:
+          Source: "Content"
+          Target: "Content"
+        MetaDescription:
+          Source: "MetaDescription"
+          Target: "MetaDescription"
+        ExtraMeta:
+          Source: "ExtraMeta"
+          Target: "ExtraMeta"
+        ShowInMenus:
+          Source: "ShowInMenus"
+          Target: "ShowInMenus"
+        ShowInSearh:
+          Source: "ShowInSearh"
+          Target: "ShowInSearh"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        HasBrokenFile:
+          Source: "HasBrokenFile"
+          Target: "HasBrokenFile"
+        HasBrokenLink:
+          Source: "HasBrokenLink"
+          Target: "HasBrokenLink"
+        ReportClass:
+          Source: "ReportClass"
+          Target: "ReportClass"
+        MetaKeywords:
+          Source: "MetaKeywords"
+          Target: "MetaKeywords"
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "ParentID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    Page:
+      BaseClass: "SiteTree"
+      IsBaseClass: true
+      TargetClass: "Page"
+      Fields:
+        Subtitle:
+          Source: "Subtitle"
+          Target: "Subtitle"
+        ShowInFooter:
+          Source: "ShowInFooter"
+          Target: "ShowInFooter"
+        Cachable:
+          Source: "Cachable"
+          Target: "Cachable"
+        Content2:
+          Source: "Content2"
+          Target: "Content2"
+        LinkTitle1:
+          Source: "LinkTitle1"
+          Target: "LinkTitle1"
+        LinkTitle2:
+          Source: "LinkTitle2"
+          Target: "LinkTitle2"
+        LinkTitle3:
+          Source: "LinkTitle3"
+          Target: "LinkTitle3"
+        LinkTitle4:
+          Source: "LinkTitle4"
+          Target: "LinkTitle4"
+        LinkTitle5:
+          Source: "LinkTitle5"
+          Target: "LinkTitle5"
+        LinkTitle6:
+          Source: "LinkTitle6"
+          Target: "LinkTitle6"
+        ExternalLink1:
+          Source: "ExternalLink1"
+          Target: "ExternalLink1"
+        ExternalLink2:
+          Source: "ExternalLink2"
+          Target: "ExternalLink2"
+        ExternalLink3:
+          Source: "ExternalLink3"
+          Target: "ExternalLink3"
+        ExternalLink4:
+          Source: "ExternalLink4"
+          Target: "ExternalLink4"
+        ExternalLink5:
+          Source: "ExternalLink5"
+          Target: "ExternalLink5"
+        ExternalLink6:
+          Source: "ExternalLink6"
+          Target: "ExternalLink6"
+        ShowComments:
+          Source: "ShowComments"
+          Target: "ShowComments"
+        OverWriteParentComment:
+          Source: "OverWriteParentComment"
+          Target: "OverWriteParentComment"
+        isCommentTemplate:
+          Source: "isCommentTemplate"
+          Target: "isCommentTemplate"
+        FlyoutTeaser:
+          Source: "FlyoutTeaser"
+          Target: "FlyoutTeaser"
+        FlyoutButtonDisabled:
+          Source: "FlyoutButtonDisabled"
+          Target: "FlyoutButtonDisabled"
+        HasMap:
+          Source: "HasMap"
+          Target: "HasMap"
+        ComplexContentStyle:
+          Source: "ComplexContentStyle"
+          Target: "ComplexContentStyle"
+        BlockFromSearchEngines:
+          Source: "BlockFromSearchEngines"
+          Target: "BlockFromSearchEngines"
+        MetaTitle:
+          Source: "MetaTitle"
+          Target: "MetaTitle"
+        AlternativeCanonical:
+          Source: "AlternativeCanonical"
+          Target: "AlternativeCanonical"
+        DeactivateCTALink:
+          Source: "DeactivateCTALink"
+          Target: "DeactivateCTALink"
+        PageFAQsTitle:
+          Source: "PageFAQsTitle"
+          Target: "PageFAQsTitle"
+        SearchResultText:
+          Source: "SearchResultText"
+          Target: "SearchResultText"
+        RandBoxDesc:
+          Source: "RandBoxDesc"
+          Target: "RandBoxDesc"
+        RandBoxTagable:
+          Source: "RandBoxTagable"
+          Target: "RandBoxTagable"
+        OverviewTitle:
+          Source: "OverviewTitle"
+          Target: "OverviewTitle"
+        OverviewTeaser:
+          Source: "OverviewTeaser"
+          Target: "OverviewTeaser"
+      hasone:
+        WidgetAreaID:
+          Source: "WidgetAreaID"
+          Target: "WidgetAreaID"
+          TargetClass: SilverStripe\Widgets\Model\WidgetArea
+        WidgetAreaContentID:
+          Source: "WidgetAreaContentID"
+          Target: "WidgetAreaContentID"
+          TargetClass: SilverStripe\Widgets\Model\WidgetArea
+        HeaderImageID:
+          Source: "HeaderImageID"
+          Target: "HeaderImageID"
+          TargetClass: SilverStripe\Assets\Image
+        NavImageID:
+          Source: "NavImageID"
+          Target: "NavImageID"
+          TargetClass: SilverStripe\Assets\Image
+        Link1ID:
+          Source: "Link1ID"
+          Target: "Link1ID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        Link2ID:
+          Source: "Link2ID"
+          Target: "Link2ID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        Link3ID:
+          Source: "Link3ID"
+          Target: "Link3ID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        Link4ID:
+          Source: "Link4ID"
+          Target: "Link4ID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        Link5ID:
+          Source: "Link5ID"
+          Target: "Link5ID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        Link6ID:
+          Source: "Link6ID"
+          Target: "Link6ID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        RandboxImageID:
+          Source: "RandboxImageID"
+          Target: "RandboxImageID"
+          TargetClass: SilverStripe\Assets\Image
+      manymany:
+        TeamMembers:
+          Source: TeamMembers
+          Target: TeamMembers
+          TargetClass: Team\DataObjects\TeamMember
+        PageFAQsQuestions:
+          Source: PageFAQsQuestions
+          TargetClass: FAQ\DataObjects\FAQ
+          Target: PageFAQsQuestions
+        RelatedPages:
+          Source: RelatedPages
+          TargetClass: Page
+          Target: RelatedPages
+    CoreDataObject:
+      IsBaseClass: true
+      Fields:
+        Content:
+          Source: "Content"
+          Target: "Content"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        Title:
+          Source: "Title"
+          Target: "Title"
+    WidgetArea:
+      TargetClass: SilverStripe\Widgets\Model\WidgetArea
+      Fields:
+        Created:
+          Source: Created
+          Target: Created
+      LocaleField: Locale
+    Widget:
+      IsBaseClass: true
+      LocaleField: Locale
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        Enabled:
+          Source: "Enabled"
+          Target: "Enabled"
+        Height:
+          Source: "Height"
+          Target: "Height"
+        visiblemobile:
+          Source: "visiblemobile"
+          Target: "visiblemobile"
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "ParentID"
+          TargetClass: SilverStripe\Widgets\Model\WidgetArea
+    Blog:
+      BaseClass: "Page"
+      TargetClass: SilverStripe\Blog\Model\Blog
+      Fields:
+        PostsPerPage:
+          Source: "PostsPerPage"
+          Target: "PostsPerPage"
+      manymany:
+        Editors:
+          Source: Editors
+          TargetClass: SilverStripe\Security\Member
+          Target: Editors
+        Writers:
+          Source: Writers
+          TargetClass: SilverStripe\Security\Member
+          Target: Writers
+        Contributors:
+          Source: Contributors
+          TargetClass: SilverStripe\Security\Member
+          Target: Contributors
+    BlogTag:
+      TargetClass: SilverStripe\Blog\Model\BlogTag
+      ParentLocale: "Blog"
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        ClickCounter:
+          Source: "ClickCounter"
+          Target: "ClickCounter"
+      hasone:
+        BlogID:
+          Source: "BlogID"
+          Target: "BlogID"
+          TartetClass: SilverStripe\Blog\Model\Blog
+    BlogPost:
+      TargetClass: SilverStripe\Blog\Model\BlogPost
+      BaseClass: "Page"
+      Fields:
+        PublishDate:
+          Source: "PublishDate"
+          Target: "PublishDate"
+        AuthorNames:
+          Source: "AuthorNames"
+          Target: "AuthorNames"
+        Summary:
+          Source: "Summary"
+          Target: "Summary"
+        TeaserContentTitle:
+          Source: "TeaserContentTitle"
+          Target: "TeaserContentTitle"
+        TeaserSubTitle:
+          Source: "TeaserSubTitle"
+          Target: "TeaserSubTitle"
+        Caption:
+          Source: "Caption"
+          Target: "Caption"
+      hasone:
+        FeaturedImageID:
+          Source: "FeaturedImageID"
+          Target: "FeaturedImageID"
+          TargetClass: SilverStripe\Assets\Image
+      manymany:
+        Categories:
+          Source: Categories
+          TargetClass: SilverStripe\Blog\Model\BlogCategory
+          Target: Categories
+        Tags:
+          Source: Tags
+          TargetClass: SilverStripe\Blog\Model\BlogTag
+          Target: Tags
+        Authors:
+          Source: Authors
+          TargetClass: SilverStripe\Security\Member
+          Target: Authors
+    FAQsModule:
+      BaseClass: Page
+      TargetClass: FAQ\Pages\FAQPage
+      Fields:
+        ShowInRSS:
+          Source: "ShowInRSS"
+          Target: "ShowInRSS"
+        ShowPerPage:
+          Source: "ShowPerPage"
+          Target: "ShowPerPage"
+        SortField:
+          Source: "SortField"
+          Target: "SortField"
+        SortOrder:
+          Source: "SortOrder"
+          Target: "SortOrder"
+    FAQsQuestion:
+      BaseClass: CoreDataObject
+      TargetClass: FAQ\DataObjects\FAQ
+      ParentLocale: "Parent"
+      Fields:
+        ClickCounter:
+          Source: "ClickCounter"
+          Target: "ClickCounter"
+        ShowInWidget:
+          Source: "ShowInWidget"
+          Target: "ShowInWidget"
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "FAQPageID"
+      manymany:
+        FAQsCategories:
+          Source: FAQsCategories
+          TargetClass: FAQ\DataObjects\FAQCategory
+          Target: FAQCategories
+    FAQsCategory:
+      BaseClass: CoreDataObject
+      TargetClass: FAQ\DataObjects\FAQCategory
+      ParentLocale: "Parent"
+      Fields:
+        Description:
+          Source: "Description"
+          Target: "Description"
+        SearchResultText:
+          Source: "SearchResultText"
+          Target: "SearchResultText"
+        ShowInWidget:
+          Source: "ShowInWidget"
+          Target: "ShowInWidget"
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "FAQPageID"
+          TargetClass: FAQ\Pages\FAQPage
+    GlossaryPage:
+      BaseClass: Page
+      TargetClass: "GlossaryPage"
+      Fields:
+    GlossaryEntry:
+      TargetClass: "GlossaryEntry"
+      ParentLocale: "GlossaryPage"
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        Description:
+          Source: "Description"
+          Target: "Description"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        Needle:
+          Source: "Needle"
+          Target: "Needle"
+      hasone:
+        GlossaryPageID:
+          Source: "GlossaryPageID"
+          Target: "GlossaryPageID"
+          TargetClass: GlossaryPage
+    ReferencesModule:
+      TargetClass: Reference\Pages\ReferencePage
+      BaseClass: Page
+      Fields:
+        ShowPerPage:
+          Source: "ShowPerPage"
+          Target: "ShowPerPage"
+        SortField:
+          Source: "SortField"
+          Target: "SortField"
+        SortOrder:
+          Source: "SortOrder"
+          Target: "SortOrder"
+    ReferencesCategory:
+      TargetClass: Reference\DataObjects\ReferenceCategory
+      BaseClass: CoreDataObject
+      ParentLocale: "Parent"
+      Fields:
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "ReferencePageID"
+          TargetClass: Reference\Pages\ReferencePage
+    Reference:
+      TargetClass: Reference\DataObjects\Reference
+      BaseClass: CoreDataObject
+      ParentLocale: "Parent"
+      Fields:
+        Name:
+          Source: "Name"
+          Target: "Title"
+        ShowOnHomePage:
+          Source: "ShowOnHomePage"
+          Target: "ShowOnHomePage"
+      hasone:
+        ImageID:
+          Source: "ImageID"
+          Target: "ImageID"
+          TargetClass: SilverStripe\Assets\Image
+        ParentID:
+          Source: "ParentID"
+          Target: "ReferencePageID"
+          TargetClass: Reference\Pages\ReferencePage
+      manymany:
+        ReferencesCategories:
+          Source: ReferencesCategories
+          TargetClass: Reference\DataObjects\ReferenceCategory
+          Target: ReferenceCategories
+    TeamModule:
+      BaseClass: Page
+      TargetClass: Team\Pages\TeamPage
+      Fields:
+    TeamMember:
+      BaseClass: CoreDataObject
+      TargetClass: Team\DataObjects\TeamMember
+      ParentLocale: "Parent"
+      Fields:
+        ShowInUpload:
+          Source: "ShowInUpload"
+          Target: "ShowInUpload"
+        PositionDescription:
+          Source: "PositionDescription"
+          Target: "PositionDescription"
+        XingURL:
+          Source: "XingURL"
+          Target: "XingURL"
+        LinkedinURL:
+          Source: "LinkedinURL"
+          Target: "LinkedinURL"
+        MailAddress:
+          Source: "MailAddress"
+          Target: "MailAddress"
+        TwitterURL:
+          Source: "TwitterURL"
+          Target: "TwitterURL"
+        ShowInWidget:
+          Source: "ShowInWidget"
+          Target: "ShowInWidget"
+        VisaCategoryTitle:
+          Source: "VisaCategoryTitle"
+          Target: "VisaCategoryTitle"
+        VisaCategoryDesc:
+          Source: "VisaCategoryDesc"
+          Target: "VisaCategoryDesc"
+      hasone:
+        ImageID:
+          Source: "ImageID"
+          Target: "ImageID"
+          TargetClass: SilverStripe\Assets\Image
+        ParentID:
+          Source: "ParentID"
+          Target: "TeamPageID"
+          TargetClass: Team\Pages\TeamPage
+        VisaCategoryPageID:
+          Source: "VisaCategoryPageID"
+          Target: "VisaCategoryPageID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    TeamCategory:
+      BaseClass: CoreDataObject
+      TargetClass: Team\DataObjects\TeamMember
+      ParentLocale: "Parent"
+      Fields:
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "TeamPageID"
+          TargetClass: Team\Pages\TeamPage
+    TeaserBox:
+      TargetClass: "TeaserBox"
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        Content:
+          Source: "Content"
+          Target: "Content"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "ParentID"
+          TargetClass: Page
+        ButtonID:
+          Source: "ButtonID"
+          Target: "ButtonID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    CustomTextWidget:
+      BaseClass: Widget
+      TargetClass: CustomTextWidget
+      Fields:
+        SubTitle:
+          Source: SubTitle
+          Target: SubTitle
+        ImageClickable:
+          Source: ImageClickable
+          Target: ImageClickable
+        HasButton:
+          Source: HasButton
+          Target: HasButton
+      hasone:
+        CustomTextID:
+          Source: CustomTextID
+          Target: CustomTextID
+          TargetClass: CustomText
+    EstaCheckWidget:
+      BaseClass: Widget
+      TargetClass: "EstaCheckWidget"
+      Fields:
+        Size:
+          Source: "Size"
+          Target: "Size"
+        Mobil:
+          Source: "Mobil"
+          Target: "Mobil"
+        LastOnTablet:
+          Source: "LastOnTablet"
+          Target: "LastOnTablet"
+        FirstOnTablet:
+          Source: "FirstOnTablet"
+          Target: "FirstOnTablet"
+        ContentWidget:
+          Source: "ContentWidget"
+          Target: "ContentWidget"
+        Success:
+          Source: "Success"
+          Target: "Success"
+        Fail:
+          Source: "Fail"
+          Target: "Fail"
+    DecisionQuestion:
+      TargetClass: "DecisionQuestion"
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        SortOrder:
+          Source: "SortOrder"
+          Target: "SortOrder"
+        UseCountryDropDown:
+          Source: "UseCountryDropDown"
+          Target: "UseCountryDropDown"
+        SuccessContent:
+          Source: "SuccessContent"
+          Target: "SuccessContent"
+        FailureContent:
+          Source: "FailureContent"
+          Target: "FailureContent"
+        FirstQuestion:
+          Source: "FirstQuestion"
+          Target: "FirstQuestion"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+    DecisionQuestionAnswer:
+      TargetClass: "DecisionQuestionAnswer"
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        ResultContent:
+          Source: "ResultContent"
+          Target: "ResultContent"
+        ResultQuestionID:
+          Source: "ResultQuestionID"
+          Target: "ResultQuestionID"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        Failure:
+          Source: "Failure"
+          Target: "Failure"
+      hasone:
+        DecisionQuestionID:
+          Source: "DecisionQuestionID"
+          Target: "DecisionQuestionID"
+          TargetClass: DecisionQuestion
+    VisaUpload:
+      BaseClass: Page
+      TargetClass: "VisaUpload"
+      Fields:
+    KontaktFormPage:
+      BaseClass: Page
+      TargetClass: "KontaktFormPage"
+      Fields:
+        ContactEmail:
+          Source: "ContactEmail"
+          Target: "ContactEmail"
+      hasone:
+        CompanyLinkID:
+          Source: "CompanyLinkID"
+          Target: "CompanyLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        PrivateLinkID:
+          Source: "PrivateLinkID"
+          Target: "PrivateLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+      manymany:
+        KontaktFormPage:
+          Source: Salutations
+          TargetClass: Salutation
+          Target: Salutation
+    Salutation:
+      TargetClass: "Salutation"
+      Fields:
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        Title:
+          Source: "Title"
+          Target: "Title"
+    ContentShortCode:
+      TargetClass: "ContentShortCode"
+      Fields:
+        - ShortCode
+        - Replacement
+    File:
+      TargetClass: SilverStripe\Assets\File
+      IsBaseClass: true
+      Fields:
+        Name:
+          Source: "Name"
+          Target: "Name"
+        Title:
+          Source: "Title"
+          Target: "Title"
+        FileName:
+          Source: "FileName"
+          Target: "FileName"
+        ShowInSearch:
+          Source: "ShowInSearch"
+          Target: "ShowInSearch"
+        CanViewType:
+          Source: "CanViewType"
+          Target: "CanViewType"
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "ParentID"
+          TargetClass: SilverStripe\Assets\Folder
+        OwnerID:
+          Source: "OwnerID"
+          Target: "OwnerID"
+          TargetClass: SilverStripe\Security\Member
+      manymany:
+        ViewerGroups:
+          Source: ViewerGroups
+          TargetClass: SilverStripe\Security\Group
+          Target: ViewerGroups
+    Folder:
+      BaseClass: File
+      Fields:
+    Image:
+      BaseClass: File
+      TargetClass: SilverStripe\Assets\Image
+      Fields:
+        ImageCaption:
+          Source: "ImageCaption"
+          Target: "ImageCaption"
+        Alt:
+          Source: "Alt"
+          Target: "Alt"
+    SiteConfig:
+      TargetClass: SilverStripe\SiteConfig\SiteConfig
+      Locale: "Locale"
+      Fields:
+        CallbackOverline:
+          Source: "CallbackOverline"
+          Target: "CallbackOverline"
+        CallbackSubline:
+          Source: "CallbackSubline"
+          Target: "CallbackSubline"
+        ContactOverline:
+          Source: "ContactOverline"
+          Target: "ContactOverline"
+        FAQOverline:
+          Source: "FAQOverline"
+          Target: "FAQOverline"
+        FooterTitleLeft:
+          Source: "FooterTitleLeft"
+          Target: "FooterTitleLeft"
+        FooterAddress:
+          Source: "FooterAddress"
+          Target: "FooterAddress"
+        FooterTitleCenter:
+          Source: "FooterTitleCenter"
+          Target: "FooterTitleCenter"
+        FooterContact:
+          Source: "FooterContact"
+          Target: "FooterContact"
+        FooterTitleRight:
+          Source: "FooterTitleRight"
+          Target: "FooterTitleRight"
+        FileTransferDefaultText:
+          Source: "FileTransferDefaultText"
+          Target: "FileTransferDefaultText"
+        MapsAPIKey:
+          Source: "MapsAPIKey"
+          Target: "MapsAPIKey"
+        Title:
+          Source: "Title"
+          Target: "Title"
+        Tagline:
+          Source: "Tagline"
+          Target: "Tagline"
+        CanViewType:
+          Source: "CanViewType"
+          Target: "CanViewType"
+        CanEditType:
+          Source: "CanEditType"
+          Target: "CanEditType"
+        CanCreateTopLevelType:
+          Source: "CanCreateTopLevelType"
+          Target: "CanCreateTopLevelType"
+      hasone:
+        CallbackLinkID:
+          Source: "CallbackLinkID"
+          Target: "CallbackLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        CallbackSuccessID:
+          Source: "CallbackSuccessID"
+          Target: "CallbackSuccessID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        ContactLinkID:
+          Source: "ContactLinkID"
+          Target: "ContactLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        FAQLinkID:
+          Source: "FAQLinkID"
+          Target: "FAQLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        NaviContactLinkID:
+          Source: "NaviContactLinkID"
+          Target: "NaviContactLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        CTALinkID:
+          Source: "CTALinkID"
+          Target: "CTALinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        HelpLinkID:
+          Source: "HelpLinkID"
+          Target: "HelpLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+        ServiceLinkID:
+          Source: "ServiceLinkID"
+          Target: "ServiceLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+      manymany:
+          ContentShortCodes:
+            Source: ContentShortCodes
+            TargetClass: ContentShortCode
+            Target: ContentShortCodes
+    FAQsTopWidget:
+      BaseClass: Widget
+      TargetClass: "FAQsTopWidget"
+      Fields:
+        ShowInWidget:
+          Source: "ShowInWidget"
+          Target: "ShowInWidget"
+        ShowFlaggedQuestions:
+          Source: "ShowFlaggedQuestions"
+          Target: "ShowFlaggedQuestions"
+    HomePage:
+      BaseClass: Page
+      TargetClass: "HomePage"
+      Fields:
+        HeroContentLeft:
+          Source: "HeroContentLeft"
+          Target: "HeroContentLeft"
+        HeroContentRight:
+          Source: "HeroContentRight"
+          Target: "HeroContentRight"
+        HeroContentLeftMobile:
+          Source: "HeroContentLeftMobile"
+          Target: "HeroContentLeftMobile"
+        HeroContentRightMobile:
+          Source: "HeroContentRightMobile"
+          Target: "HeroContentRightMobile"
+        HideCustomerLogosMobile:
+          Source: "HideCustomerLogosMobile"
+          Target: "HideCustomerLogosMobile"
+        HeroBackgroundMobile:
+          Source: "HeroBackgroundMobile"
+          Target: "HeroBackgroundMobile"
+        EnableCustomerLogos:
+          Source: "EnableCustomerLogos"
+          Target: "EnableCustomerLogos"
+      hasone:
+        HeroBackgroundID:
+          Source: "HeroBackgroundID"
+          Target: "HeroBackgroundID"
+          TargetClass: SilverStripe\Assets\Image
+        HeroBackgroundPrivateID:
+          Source: "HeroBackgroundPrivateID"
+          Target: "HeroBackgroundPrivateID"
+          TargetClass: SilverStripe\Assets\Image
+        HeroBackgroundBusinessID:
+          Source: "HeroBackgroundBusinessID"
+          Target: "HeroBackgroundBusinessID"
+          TargetClass: SilverStripe\Assets\Image
+        ReferenceLinkID:
+          Source: "ReferenceLinkID"
+          Target: "ReferenceLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    HeroLink:
+      TargetClass: "HeroLink"
+      ParentLocale: "Parent"
+      Fields:
+        Caption:
+          Source: "Caption"
+          Target: "Caption"
+        Type:
+          Source: "Type"
+          Target: "Type"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        Anker:
+          Source: "Anker"
+          Target: "Anker"
+      hasone:
+        ParentID:
+          Source: "ParentID"
+          Target: "ParentID"
+          TargetClass: HomePage
+        LinkPageID:
+          Source: "LinkPageID"
+          Target: "LinkPageID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    CustomerLogo:
+      TargetClass: "CustomerLogo"
+      ParentLocale: "HomePage"
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+      hasone:
+        LogoID:
+          Source: "LogoID"
+          Target: "LogoID"
+          TargetClass: SilverStripe\Assets\Image
+        HomePageID:
+          Source: "HomePageID"
+          Target: "HomePageID"
+          TargetClass: HomePage
+    IFramePage:
+      BaseClass: Page
+      TargetClass: "IFramePage"
+      Fields:
+        IFrameURL:
+          Source: "IFrameURL"
+          Target: "IFrameURL"
+        Height:
+          Source: "Height"
+          Target: "Height"
+    InternalLinkWidget:
+      BaseClass: Widget
+      TargetClass: "InternalLinkWidget"
+      Fields:
+        SubTitle:
+          Source: "SubTitle"
+          Target: "SubTitle"
+        Intro:
+          Source: "Intro"
+          Target: "Intro"
+        OverviewLink:
+          Source: "OverviewLink"
+          Target: "OverviewLink"
+        OverviewCaption:
+          Source: "OverviewCaption"
+          Target: "OverviewCaption"
+    NewsletterWidget:
+      BaseClass: Widget
+      TargetClass: "NewsletterWidget"
+      Fields:
+        SubTitle:
+          Source: "SubTitle"
+          Target: "SubTitle"
+        Text:
+          Source: "Text"
+          Target: "Text"
+        NewsletterList:
+          Source: "NewsletterList"
+          Target: "NewsletterList"
+        Fail:
+          Source: "Fail"
+          Target: "Fail"
+    OverviewPage:
+      BaseClass: Page
+      TargetClass: "OverviewPage"
+      Fields:      
+    PaymentPage:
+      BaseClass: Page
+      TargetClass: "PaymentPage"
+      Fields:
+    Popup:
+      BaseClass: Page
+      TargetClass: "Popup"
+      Fields:
+    RandomTeamMemberWidget:
+      BaseClass: Widget
+      TargetClass: "RandomTeamMemberWidget"
+      Fields:
+        SubTitle:
+          Source: "SubTitle"
+          Target: "SubTitle"
+        Text:
+          Source: "Text"
+          Target: "Text"
+        ButtonText:
+          Source: "ButtonText"
+          Target: "ButtonText"
+      hasone:
+        PageID:
+          Source: "PageID"
+          Target: "PageID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    SecureFrame:
+      BaseClass: Page
+      TargetClass: "SecureFrame"
+      Fields:
+        Mode:
+          Source: "Mode"
+          Target: "Mode"
+        SecureURL:
+          Source: "SecureURL"
+          Target: "SecureURL"
+    SeminarRegistrationFormPage:
+      BaseClass: Page
+      TargetClass: "SeminarRegistrationFormPage"
+      Fields:
+        RegisterRequirements:
+          Source: "RegisterRequirements"
+          Target: "RegisterRequirements"
+        SeminarRegistrationConfirmationText:
+          Source: "SeminarRegistrationConfirmationText"
+          Target: "SeminarRegistrationConfirmationText"
+        SeminarRegistrationButtonText:
+          Source: "SeminarRegistrationButtonText"
+          Target: "SeminarRegistrationButtonText"
+        SuccessfullRegistrationText:
+          Source: "SuccessfullRegistrationText"
+          Target: "SuccessfullRegistrationText"
+        RequirementsLinkNumber:
+          Source: "RequirementsLinkNumber"
+          Target: "RequirementsLinkNumber"
+      hasone:
+        RequirementsLinkID:
+          Source: "RequirementsLinkID"
+          Target: "RequirementsLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    SeminarRegistration:
+      TargetClass: "SeminarRegistration"
+      Fields:
+        Company:
+          Source: "Company"
+          Target: "Company"
+        Forename:
+          Source: "Forename"
+          Target: "Forename"
+        Surname:
+          Source: "Surname"
+          Target: "Surname"
+        Street:
+          Source: "Street"
+          Target: "Street"
+        NR:
+          Source: "NR"
+          Target: "NR"
+        PLZ:
+          Source: "PLZ"
+          Target: "PLZ"
+        County:
+          Source: "County"
+          Target: "County"
+        Country:
+          Source: "Country"
+          Target: "Country"
+        Email:
+          Source: "Email"
+          Target: "Email"
+        Phone:
+          Source: "Phone"
+          Target: "Phone"
+        Fax:
+          Source: "Fax"
+          Target: "Fax"
+        BillRecipient:
+          Source: "BillRecipient"
+          Target: "BillRecipient"
+        BillAdress:
+          Source: "BillAdress"
+          Target: "BillAdress"
+        BillPLZ:
+          Source: "BillPLZ"
+          Target: "BillPLZ"
+        BillCounty:
+          Source: "BillCounty"
+          Target: "BillCounty"
+        BillCountry:
+          Source: "BillCountry"
+          Target: "BillCountry"
+        Comment:
+          Source: "Comment"
+          Target: "Comment"
+      hasone:
+        SeminarID:
+          Source: "SeminarID"
+          Target: "SeminarID"
+          TargetClass: Seminar
+    Seminar:
+      TargetClass: "Seminar"
+      ParentLocale: "SeminarRegistrationFormPage"
+      Fields:
+        Sort:
+          Source: "Sort"
+          Target: "Sort"
+        Title:
+          Source: "Title"
+          Target: "Title"
+        Active:
+          Source: "Active"
+          Target: "Active"
+      hasone:
+        SeminarRegistrationFormPageID:
+          Source: "SeminarRegistrationFormPageID"
+          Target: "SeminarRegistrationFormPageID"
+          TargetClass: SeminarRegistrationFormPage
+    CustomText:
+      TargetClass: CustomText
+      Fields:
+        Title:
+          Source: "Title"
+          Target: "Title"
+        SubTitle:
+          Source: SubTitle
+          Target: SubTitle
+        ContentMode:
+          Source: ContentMode
+          Target: ContentMode
+        Content:
+          Source: Content
+          Target: Content
+        RawContent:
+          Source: RawContent
+          Target: RawContent
+        ExternalLink:
+          Source: ExternalLink
+          Target: ExternalLink
+        ImageAlignment:
+          Source: ImageAlignment
+          Target: ImageAlignment
+        ButtonCaption:
+          Source: ButtonCaption
+          Target: ButtonCaption
+      hasone:
+        ImageID:
+          Source: ImageID
+          Target: ImageID
+          TargetClass: SilverStripe\Assets\Image
+        ButtonLinkID:
+          Source: "ButtonLinkID"
+          Target: "ButtonLinkID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    SchemaThing:
+      TargetClass: "SchemaThing"
+      Fields:
+        address:
+          Source: "address"
+          Target: "address"
+        email:
+          Source: "email"
+          Target: "email"
+        legalName:
+          Source: "legalName"
+          Target: "legalName"
+        telephone:
+          Source: "telephone"
+          Target: "telephone"
+        CmsSortOrder:
+          Source: "CmsSortOrder"
+          Target: "CmsSortOrder"
+        CmsChosenSchema:
+          Source: "CmsChosenSchema"
+          Target: "CmsChosenSchema"
+        SchemaType:
+          Source: "SchemaType"
+          Target: "SchemaType"
+        alternateName:
+          Source: "alternateName"
+          Target: "alternateName"
+        description:
+          Source: "description"
+          Target: "description"
+        name:
+          Source: "name"
+          Target: "name"
+        sameAs:
+          Source: "sameAs"
+          Target: "sameAs"
+        url:
+          Source: "url"
+          Target: "url"
+      hasone:
+        mainEntityofPageID:
+          Source: "mainEntityofPageID"
+          Target: "mainEntityofPageID"
+          TargetClass: SilverStripe\CMS\Model\SiteTree
+    
